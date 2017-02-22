@@ -39,4 +39,17 @@ $(document).ready(function() {
     }
 
 
+    function decimalToRomanSimple(value) {
+        if (value <= 0 || value >= 4000) return value;
+        var romanNumeral = "";
+        for (var i = 0; i < roman.length; i++) {
+            while (value >= decimal[i]) {
+                value -= decimal[i];
+                romanNumeral += roman[i];
+            }
+        }
+        return romanNumeral;
+    }
+
+
 });
