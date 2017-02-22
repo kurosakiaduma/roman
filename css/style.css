@@ -13,8 +13,15 @@ body{
 }
 
 #result{
-    margin-top:5px
+    margin-top:5px;
+    margin-left: 505px;
+    font-size: 25px;
+    text-decoration: underline;
 }
  #romanVal{
-    margin-left:5px
+    margin-left:45px
  }
+.container{
+    text-align: center;
+    font-size: 25px;
+}
