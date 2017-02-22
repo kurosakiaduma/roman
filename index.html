@@ -15,21 +15,14 @@
 </head>
 
 <body>
-      <div class="container">
-        <h1>Roman Number Converter</h1>
+    <h1 id="header">Decimal to Roman Numeral Conversion</h1>
+    <p id="header">This is a converter that will convert akk your decimal numbers up to 4000 to Roman numerals.</p>
+    <form action="javascript:convert();" id = "numbers">
+        <label for="decimalVal">Decimal:</label>
+        <input type="text" id="decimalVal" />
+        <input type="submit" value="convert" />
+    </form>
+    <div id = "result">Roman: <span id="romanVal"/></div>
+</body>
 
-        <form id="number">
-          <div class="form-group">
-            <label for="roman">Enter a number that you want to convert to Roman numerals.</label>
-            <input id="roman" type="text">
-          </div>
-
-          <button type="submit" class="btn">SUBMIT</button>
-        </form>
-
-        <div id="result">
-
-        </div>
-      </div>
-    </body>
 </html>
