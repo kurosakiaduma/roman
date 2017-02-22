@@ -22,4 +22,21 @@ $(document).ready(function() {
         };
     }
 
+    function decimalToRoman(value) {
+        // 3,888,888 is the longest number represented by Roman numerals
+        if (value <= 0 || value > 3888888) return value;
+        var romanNumeral1 = "";
+        var romanO = getRoman(value);
+        // If the number is 4000 or greater
+        if (romanO.numThousands > 4) {
+            var thousandString = "";
+            for (var j = 0; j < romanO.numThousands; j++) thousandString += "M";
+            var thousandsO = getRoman(romanO.numThousands);
+            var thBase = "<span style='border-top:1px solid #000'>" + thousandsO.romanNumeral + "</span>";
+            romanNumeral = romanO.romanNumeral.replace(thousandString, thBase);
+        } else romanNumeral = romanO.romanNumeral;
+        return romanNumeral;
+    }
+
+
 });
