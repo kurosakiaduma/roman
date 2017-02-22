@@ -51,5 +51,10 @@ $(document).ready(function() {
         return romanNumeral;
     }
 
+    function convert() {
+        var dec = document.getElementById('decimalVal');
+        if (dec.value.length > 0) document.getElementById('romanVal').innerHTML = decimalToRoman(dec.value);
+    }
+
 
 });
